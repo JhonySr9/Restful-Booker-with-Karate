@@ -1,0 +1,11 @@
+{
+  "firstname" : "#(randomFirstname)",
+  "lastname" : "#(randomLastname)",
+  "totalprice" : "#(randomTotalprice)",
+  "depositpaid" : "#(randomDepositpaid)",
+  "bookingdates" : {
+    "checkin" : "#(randomBookingdatesCheckin)",
+    "checkout" : "#(randomBookingdatesCheckout)"
+  },
+  "additionalneeds" : "#(randomAdditionalneeds)"
+}
