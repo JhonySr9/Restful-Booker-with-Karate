@@ -1,13 +1,34 @@
 {
   "value": [
-    {
-      "name": "Breakfast"
-    },
-    {
-      "name": "Massage"
-    },
-    {
-      "name": "Dinner"
-    }
+    {"name": "Breakfast"},
+    {"name": "Massage"},
+    {"name": "Dinner"},
+    {"name": "Lunch"},
+    {"name": "Gym Session"},
+    {"name": "Spa Day"},
+    {"name": "Movie Night"},
+    {"name": "Shopping"},
+    {"name": "Yoga Class"},
+    {"name": "Coffee Date"},
+    {"name": "Beach Picnic"},
+    {"name": "Reading Time"},
+    {"name": "Hiking Adventure"},
+    {"name": "Cooking Class"},
+    {"name": "Art Exhibition"},
+    {"name": "Concert Night"},
+    {"name": "Tech Conference"},
+    {"name": "Volunteer Work"},
+    {"name": "Photography Workshop"},
+    {"name": "Game Night"},
+    {"name": "Karaoke Party"},
+    {"name": "Road Trip"},
+    {"name": "Bike Ride"},
+    {"name": "Crafting Workshop"},
+    {"name": "Language Class"},
+    {"name": "Historical Tour"},
+    {"name": "Gardening"},
+    {"name": "Podcast Recording"},
+    {"name": "Comedy Show"},
+    {"name": "Virtual Reality Experience"}
   ]
 }

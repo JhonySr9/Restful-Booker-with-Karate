@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed83d082-d8db-4492-bcdf-d4cd04b5c9a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/authorization/Login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/booking/Booking.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/karate-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/authorization/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/authorization/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/booking/Booking.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/booking/Booking.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/booking/data/additionalneeds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/booking/data/additionalneeds.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/booking/data/bookingdates_checkin.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/booking/data/bookingdates_checkin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/booking/data/bookingdates_checkout.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/booking/data/bookingdates_checkout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karate-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karate-config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,15 +53,16 @@
       <recent name="C:\Users\jhony\Downloads\RESTful Booker with Karate\src\test\java\booking\data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KarateRunnerBooking">
-    <configuration name="Feature: Booking" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.KarateRunnerBooking.Booking">
+    <configuration name="Scenario: (DELETE) Delete a Booking check" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/booking/Booking.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="RESTful Booker with Karate" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Booking" />
+      <option name="NAME_FILTER" value="^\(DELETE\) Delete a Booking check$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^\(DELETE\) Delete a Booking check$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: (DELETE) Delete a Booking check" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -75,15 +74,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User is able to log in successfully." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: (GET) Ping to receive a HealthCheck" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/authorization/Login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/ping/Ping.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="RESTful Booker with Karate" />
-      <option name="NAME_FILTER" value="^User is able to log in successfully\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^User is able to log in successfully\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User is able to log in successfully." />
+      <option name="NAME_FILTER" value="^\(GET\) Ping to receive a HealthCheck$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^\(GET\) Ping to receive a HealthCheck$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: (GET) Ping to receive a HealthCheck" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -115,15 +114,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: (POST) Create a new Booking" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: (POST) Update a Booking check in" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/booking/Booking.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="RESTful Booker with Karate" />
-      <option name="NAME_FILTER" value="^\(POST\) Create a new Booking$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^\(POST\) Create a new Booking$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: (POST) Create a new Booking" />
+      <option name="NAME_FILTER" value="^\(POST\) Update a Booking check in$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^\(POST\) Update a Booking check in$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: (POST) Update a Booking check in" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -135,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KarateRunnerBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KarateRunnerBooking.Booking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RESTful Booker with Karate" />
       <extension name="coverage">
         <pattern>
@@ -145,18 +144,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="booking" />
       <option name="MAIN_CLASS_NAME" value="booking.KarateRunnerBooking" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="Booking" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KarateRunnerBooking" />
-        <item itemvalue="Cucumber Java.Feature: Booking" />
-        <item itemvalue="Cucumber Java.Scenario: (POST) Create a new Booking" />
+        <item itemvalue="JUnit.KarateRunnerBooking.Booking" />
+        <item itemvalue="Cucumber Java.Scenario: (GET) Ping to receive a HealthCheck" />
+        <item itemvalue="Cucumber Java.Scenario: (DELETE) Delete a Booking check" />
+        <item itemvalue="Cucumber Java.Scenario: (POST) Update a Booking check in" />
         <item itemvalue="Cucumber Java.Scenario: (GET) Returns the ids of all the bookings that exist" />
-        <item itemvalue="Cucumber Java.Scenario: User is able to log in successfully." />
       </list>
     </recent_temporary>
   </component>

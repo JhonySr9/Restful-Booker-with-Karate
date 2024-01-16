@@ -4,11 +4,12 @@ Feature: Booking
     * headers commonHeaders
     * url baseUrl
     * path 'booking'
+    * def fakerObj =  new faker()
 
     # Pre-data
-    * def firstnameData = read('classpath:booking/data/firstname.json')
-    * def lastnameData = read('classpath:booking/data/lastname.json')
-    * def totalpriceData = read('classpath:booking/data/totalprice.json')
+    * def firstnameData = fakerObj.name().firstName()
+    * def lastnameData = fakerObj.name().lastName()
+    * def totalpriceData = fakerObj.number().numberBetween(1000, 6000)
     * def depositpaidData = read('classpath:booking/data/depositpaid.json')
     * def bookingdates_checkinData = read('classpath:booking/data/bookingdates_checkin.json')
     * def bookingdates_checkoutData = read('classpath:booking/data/bookingdates_checkout.json')
@@ -33,9 +34,9 @@ Feature: Booking
 
     # Post-data
 
-    * def randomFirstname = generateRandomData(firstnameData.value)
-    * def randomLastname = generateRandomData(lastnameData.value)
-    * def randomTotalprice = generateRandomData(totalpriceData.value)
+    * def randomFirstname = firstnameData
+    * def randomLastname = lastnameData
+    * def randomTotalprice = totalpriceData
     * def randomDepositpaid = generateRandomData(depositpaidData.value)
     * def randomBookingdatesCheckin = generateRandomData(bookingdates_checkinData.value)
     * def randomBookingdatesCheckout = generateRandomData(bookingdates_checkoutData.value)
@@ -68,3 +69,41 @@ Feature: Booking
     When status 200
     And match response.booking == bookingRequest
 
+  @Booking004
+  Scenario: (PUT) Update a Booking check in with information from another Customer
+  # Pre-conditions
+    ## Log in
+    * call read('classpath:authorization/Login.feature@Login001')
+    * def tokenNumber = response.token
+    ## Cookies
+    * cookies 'Cookie: token=' + tokenNumber
+    ## Create a Booking
+    * call read('classpath:booking/Booking.feature@Booking002')
+    * def bookingId = response.bookingid
+
+  # Test
+    Given path 'booking/' + bookingId
+    When method PUT
+    Then status 200
+    And match response.bookingdates.checkin == randomBookingdatesCheckin
+    And match response.bookingdates.checkout == randomBookingdatesCheckout
+
+  @Booking005
+  Scenario: (DELETE) Delete a Booking check (With Cookies)
+  # Pre-conditions
+    ## Log in
+    * call read('classpath:authorization/Login.feature@Login001')
+    * def tokenNumber = response.token
+    ## Cookies
+    * def cookieHeaderValue = 'token=' + tokenNumber
+    ## Create a Booking
+    * call read('classpath:booking/Booking.feature@Booking002')
+    * def bookingId = response.bookingid
+
+  # Test
+    Given path 'booking/' + bookingId
+    And headers { 'Cookie': '#(cookieHeaderValue)' }
+    When request { 'id': '#(bookingId)' }
+    And method DELETE
+    Then status 201
+    And match response contains 'Created'

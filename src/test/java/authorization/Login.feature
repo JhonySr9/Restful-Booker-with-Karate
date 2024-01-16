@@ -17,6 +17,3 @@ Feature: Login
     When method POST
     Then status 200
     And match response.token == '#present'
-
-    # Logs
-    * karate.log(response)
